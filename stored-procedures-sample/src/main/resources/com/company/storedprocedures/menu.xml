@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <menu id="application" caption="msg://com.company.storedprocedures/menu.application" insertBefore="administration">
+        <item screen="CarWithModel.browse"
+              caption="msg://com.company.storedprocedures.screen.carwithmodel/carWithModelBrowse.menu"/>
+        <item screen="CarsByYear"
+              caption="msg://com.company.storedprocedures.screen.car/carsByYear.menu"/>
+        <item screen="Car.browse" caption="msg://com.company.storedprocedures.screen.car/carBrowse.menu"/>
+        <item screen="Model.browse" caption="msg://com.company.storedprocedures.screen.model/modelBrowse.menu"/>
+        <item screen="User.browse" caption="msg://com.company.storedprocedures.screen.user/UserBrowse.caption"/>
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+    </menu>
+
+</menu-config>

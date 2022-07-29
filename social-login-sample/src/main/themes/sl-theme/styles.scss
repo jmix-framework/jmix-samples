@@ -1,0 +1,49 @@
+@import "sl-theme-defaults";
+@import "addons";
+@import "sl-theme";
+
+.sl-theme {
+  @include addons;
+  @include sl-theme;
+
+  --google-button-color: #4285f4;
+  --google-button-text-color: #fff;
+  --google-button-hover-color: #4285f4;
+  --google-button-active-color: #3367d6;
+  --google-button-disabled-color: #ebebeb;
+  --google-button-disabled-text-color: #8d8d8d;
+  --google-button-focused-border-color: #c3d7f8;
+
+  --github-button-color: #1a1414;
+  --github-button-text-color: #fff;
+  --github-button-hover-color: #1a1414;
+  --github-button-active-color: #252020;
+  --github-button-disabled-color: #d7d7d7;
+  --github-button-disabled-text-color: #8d8d8d;
+  --github-button-focused-border-color: #8d8d8d;
+
+
+  .jmix-login-submit-button.google-button {
+    @include he-button-color-style(
+            $main-color: --google-button-color,
+            $text-color: --google-button-text-color,
+            $hover-color: --google-button-hover-color,
+            $active-color: --google-button-active-color,
+            $disabled-color: --google-button-disabled-color,
+            $disabled-text-color: --google-button-disabled-text-color,
+            $focused-border-color: --google-button-focused-border-color
+    );
+  }
+
+  .jmix-login-submit-button.github-button {
+    @include he-button-color-style(
+            $main-color: --github-button-color,
+            $text-color: --github-button-text-color,
+            $hover-color: --github-button-hover-color,
+            $active-color: --github-button-active-color,
+            $disabled-color: --github-button-disabled-color,
+            $disabled-text-color: --github-button-disabled-text-color,
+            $focused-border-color: --github-button-focused-border-color
+    );
+  }
+}
