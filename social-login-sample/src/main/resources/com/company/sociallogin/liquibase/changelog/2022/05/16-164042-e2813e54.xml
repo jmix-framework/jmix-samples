@@ -8,6 +8,7 @@
     <changeSet id="1" author="jmix-social-login-sample">
         <addColumn tableName="USER_">
             <column name="GOOGLE_ID" type="VARCHAR(255)"/>
+            <column name="GITHUB_ID" type="int"/>
         </addColumn>
     </changeSet>
 </databaseChangeLog>
