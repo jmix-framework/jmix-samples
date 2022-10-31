@@ -9,10 +9,10 @@ import io.jmix.security.authentication.RoleGrantedAuthority;
 import io.jmix.security.model.ResourceRole;
 import io.jmix.security.role.ResourceRoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
@@ -24,13 +24,13 @@ import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.DefaultRedirectStrategy;
+import org.springframework.security.web.SecurityFilterChain;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 @Configuration
-@Order(JmixOrder.HIGHEST_PRECEDENCE + 100)
-public class OAuthSecurityConfig extends WebSecurityConfigurerAdapter {
+public class OAuthSecurityConfig {
 
     @Autowired
     private ClientRegistrationRepository clientRegistrationRepository;
@@ -41,8 +41,9 @@ public class OAuthSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private OAuth2UserPersistence oidcUserPersistence;
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    @Bean
+    @Order(JmixOrder.HIGHEST_PRECEDENCE + 100)
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.apply(SecurityConfigurers.uiSecurity())
                 .and()
                 .oauth2Login(configurer -> {
@@ -59,6 +60,7 @@ public class OAuthSecurityConfig extends WebSecurityConfigurerAdapter {
                 .logout(configurer -> {
                     configurer.logoutSuccessHandler(oidcLogoutSuccessHandler());
                 });
+        return http.build();
     }
 
     /**

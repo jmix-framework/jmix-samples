@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JmixDataStoreSettingsManager">
     <moduleSettings>
-      <entry key="kerberos-sample.main">
+      <entry key="com.company.kerberos-sample.main">
         <ModuleSettings>
           <option name="dataStoreOptions">
             <map>
@@ -42,6 +42,19 @@
         </ModuleSettings>
       </entry>
       <entry key="external-data.main">
+        <ModuleSettings>
+          <option name="dataStoreOptions">
+            <map>
+              <entry key="main">
+                <value>
+                  <DataStoreSettings />
+                </value>
+              </entry>
+            </map>
+          </option>
+        </ModuleSettings>
+      </entry>
+      <entry key="kerberos-sample.main">
         <ModuleSettings>
           <option name="dataStoreOptions">
             <map>

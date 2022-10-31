@@ -15,7 +15,7 @@ version = '0.0.1-SNAPSHOT'
 repositories {
     mavenCentral()
     maven {
-        url = 'https://nexus.jmix.io/repository/public'
+        url = 'https://global.repo.jmix.io/repository/public'
     }
 }
 
