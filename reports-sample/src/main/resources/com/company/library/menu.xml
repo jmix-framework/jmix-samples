@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+    <menu id="application" caption="msg://com.company.library/menu.application" insertBefore="administration">
+        <item screen="jmxrpr_User.browse" caption="msg://com.company.library.screen.user/UserBrowse.caption"/>
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="jmxrpr_Town.browse" caption="msg://com.company.library.screen.town/townBrowse.menu"/>
+        <item screen="jmxrpr_Publisher.browse"
+              caption="msg://com.company.library.screen.publisher/publisherBrowse.menu"/>
+        <item screen="jmxrpr_LiteratureType.browse"
+              caption="msg://com.company.library.screen.literaturetype/literatureTypeBrowse.menu"/>
+        <item screen="jmxrpr_LibraryDepartment.browse"
+              caption="msg://com.company.library.screen.librarydepartment/libraryDepartmentBrowse.menu"/>
+        <item screen="jmxrpr_BookInstance.browse"
+              caption="msg://com.company.library.screen.bookinstance/bookInstanceBrowse.menu"/>
+        <item screen="jmxrpr_BookPublication.browse"
+              caption="msg://com.company.library.screen.bookpublication/bookPublicationBrowse.menu"/>
+        <item screen="jmxrpr_Book.browse" caption="msg://com.company.library.screen.book/bookBrowse.menu"/>
+        <item screen="jmxrpr_RunReportScreen" caption="msg://com.company.library.screen.other/runReportScreen.caption"/>
+        <item screen="jmxrpr_Author.browse" caption="msg://com.company.library.screen.author/authorBrowse.menu"/>
+    </menu>
+
+</menu-config>

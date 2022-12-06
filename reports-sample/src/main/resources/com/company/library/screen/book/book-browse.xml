@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        xmlns:c="http://jmix.io/schema/ui/jpql-condition"
+        caption="msg://bookBrowse.caption"
+        focusComponent="booksTable">
+    <data readOnly="true">
+        <collection id="booksDc"
+                    class="com.company.library.entity.Book">
+            <fetchPlan extends="_base">
+                <property name="authors" fetchPlan="_base"/>
+                <property name="literatureType" fetchPlan="_base"/>
+            </fetchPlan>
+            <loader id="booksDl">
+                <query>
+                    <![CDATA[select e from jmxrpr_Book e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+        <screenSettings id="settingsFacet" auto="true"/>
+    </facets>
+    <actions>
+        <action id="lookupSelectAction"
+                caption="msg:///actions.Select"
+                icon="LOOKUP_OK"
+                primary="true"
+                shortcut="${COMMIT_SHORTCUT}"/>
+        <action id="lookupCancelAction"
+                caption="msg:///actions.Cancel"
+                icon="LOOKUP_CANCEL"/>
+    </actions>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="booksTable" spacing="true">
+        <filter id="filter"
+                dataLoader="booksDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="booksTable"
+                    width="100%"
+                    dataContainer="booksDc">
+            <!-- tag::run-action[] -->
+            <actions>
+                <!-- end::run-action[] -->
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+                <action id="listPrintForm" type="listPrintForm" caption="Print details"/>
+                <!-- tag::run-action[] -->
+                <action id="run" type="runReport"/> <!--1-->
+            </actions>
+            <!-- end::run-action[] -->
+            <columns>
+                <column id="name"/>
+                <column id="literatureType"/>
+                <column id="summary"/>
+            </columns>
+            <simplePagination/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="booksTable.create"/>
+                <button id="editBtn" action="booksTable.edit"/>
+                <button id="removeBtn" action="booksTable.remove"/>
+                <button id="printBtn" action="booksTable.listPrintForm"/>
+                <!-- tag::run-action[] -->
+                <button id="runBtn" action="booksTable.run"/> <!--2-->
+            </buttonsPanel>
+            <!-- end::run-action[] -->
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>

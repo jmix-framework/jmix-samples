@@ -67,6 +67,19 @@
           </option>
         </ModuleSettings>
       </entry>
+      <entry key="library.main">
+        <ModuleSettings>
+          <option name="dataStoreOptions">
+            <map>
+              <entry key="main">
+                <value>
+                  <DataStoreSettings />
+                </value>
+              </entry>
+            </map>
+          </option>
+        </ModuleSettings>
+      </entry>
       <entry key="social-login-sample.main">
         <ModuleSettings>
           <option name="dataStoreOptions">
