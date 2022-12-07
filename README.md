@@ -6,8 +6,8 @@ To work with an example, clone the repository and open the respective folder in 
 
 - [External Data](external-data-sample) project demonstrates various approaches to working with data from external services.
 - [Kerberos](kerberos-sample) project demonstrates how to enable clients (browsers), authenticated in a Windows domain, to be transparently authenticated in Jmix application using Kerberos/SPNEGO without the need to type in a password again.
-- [Stored Procedures](stored-procedures-sample) project shows how you can call database stored procedures for loading and saving data.
+- [Reports](reports-sample) sample project shows how to use the [Reports add-on](https://docs.jmix.io/jmix/reports/index.html).
 - [Social Login](social-login-sample) project demonstrates how to implement additional authentication through external providers: Google and GitHub.
-- [Reports Sample](reports-sample) project shows how to use the [Reports](https://docs.jmix.io/jmix/reports/index.html) add-on in the applications based on the Jmix framework.
+- [Stored Procedures](stored-procedures-sample) project shows how you can call database stored procedures for loading and saving data.
 
 See also the [Jmix UI Samples](https://demo.jmix.io/sampler) web application which contains over 300 short examples related to UI.

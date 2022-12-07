@@ -1,13 +1,11 @@
-# Library
-This is a showcase application which is developed to demonstrate the capabilities and features of the Jmix framework.
+# Reports Sample
 
-The Library application is designed to keep a track of the books stored in a library. A user can create, edit and delete books, authors, publishers, library departments, etc. and perform the book instances accession.
+This is a showcase application which demonstrates the usage of the Jmix Reports add-on. The [Reports documentation](https://docs.jmix.io/jmix/reports) refers to this project. 
 
-The Library showcase contains:
+The application is called *Library*. It's designed to keep track of the books stored in a library. A user can create, edit and delete books, authors, publishers, library departments, etc. and perform the book instances accession.
 
-- The data model, which includes 8 related entities
-- Custom screens
-- Simple business logic
-- Reporting module with [sample reports](https://docs.jmix.io/jmix/reports/sample-reports.html) 
+The Library project contains:
 
-Based on Jmix 1.4.
+- Data model
+- CRUD screens
+- [Sample reports](https://docs.jmix.io/jmix/reports/sample-reports.html) 
