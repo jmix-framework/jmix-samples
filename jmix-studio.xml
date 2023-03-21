@@ -4,11 +4,13 @@
     <moduleSettings>
       <entry key="com.company.kerberos-sample.main">
         <ModuleSettings>
-          <option name="dataStoreOptions">
+          <option name="dataStoreOptionsV2">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettingsV2>
+                    <option name="nameLengthMode" value="ORACLE" />
+                  </DataStoreSettingsV2>
                 </value>
               </entry>
             </map>
@@ -17,11 +19,13 @@
       </entry>
       <entry key="external-data-sample.main">
         <ModuleSettings>
-          <option name="dataStoreOptions">
+          <option name="dataStoreOptionsV2">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettingsV2>
+                    <option name="nameLengthMode" value="ORACLE" />
+                  </DataStoreSettingsV2>
                 </value>
               </entry>
             </map>
@@ -67,13 +71,13 @@
           </option>
         </ModuleSettings>
       </entry>
-      <entry key="library.main">
+      <entry key="reports-sample.main">
         <ModuleSettings>
-          <option name="dataStoreOptions">
+          <option name="dataStoreOptionsV2">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettingsV2 />
                 </value>
               </entry>
             </map>
@@ -82,11 +86,13 @@
       </entry>
       <entry key="social-login-sample.main">
         <ModuleSettings>
-          <option name="dataStoreOptions">
+          <option name="dataStoreOptionsV2">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettingsV2>
+                    <option name="nameLengthMode" value="ORACLE" />
+                  </DataStoreSettingsV2>
                 </value>
               </entry>
             </map>
@@ -108,11 +114,13 @@
       </entry>
       <entry key="stored-procedures-sample.main">
         <ModuleSettings>
-          <option name="dataStoreOptions">
+          <option name="dataStoreOptionsV2">
             <map>
               <entry key="main">
                 <value>
-                  <DataStoreSettings />
+                  <DataStoreSettingsV2>
+                    <option name="nameLengthMode" value="ORACLE" />
+                  </DataStoreSettingsV2>
                 </value>
               </entry>
             </map>

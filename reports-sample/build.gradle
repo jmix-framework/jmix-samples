@@ -1,12 +1,12 @@
 plugins {
-    id 'io.jmix' version '1.4.1'
+    id 'io.jmix' version '1.5.0'
     id 'java'
 }
 
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.4.1'
+    bomVersion = '1.5.0'
     projectId = 'jmxrpr'
 }
 
@@ -16,7 +16,7 @@ version = '0.0.1-SNAPSHOT'
 repositories {
     mavenCentral()
     maven {
-        url 'https://nexus.jmix.io/repository/public'
+        url = 'https://global.repo.jmix.io/repository/public'
     }
 }
 
@@ -44,6 +44,7 @@ dependencies {
     implementation 'io.jmix.reports:jmix-reports-rest-starter'
     implementation 'io.jmix.reports:jmix-reports-ui-starter'
     implementation 'io.jmix.quartz:jmix-quartz-starter'
+    implementation 'io.jmix.quartz:jmix-quartz-ui-starter'
     widgets 'io.jmix.ui:jmix-ui-widgets'
     widgets 'io.jmix.ui:jmix-charts-widgets'
     implementation 'io.jmix.ui:jmix-charts-starter'

@@ -9,6 +9,12 @@
 
     <property name="uuid.type" dbms="oracle" value="varchar2(32)"/>
     <property name="uuid.type" dbms="!oracle" value="uuid"/>
+    <include file="/io/jmix/securityoauth2/liquibase/changelog.xml"/>
+    <include file="/io/jmix/data/liquibase/changelog.xml"/>
+    <include file="/io/jmix/uidata/liquibase/changelog.xml"/>
+    <include file="/io/jmix/securitydata/liquibase/changelog.xml"/>
+    <include file="/io/jmix/reports/liquibase/changelog.xml"/>
+    <include file="/io/jmix/quartz/liquibase/changelog.xml"/>
 
     <includeAll path="/com/company/library/liquibase/changelog"/>
 
