@@ -8,4 +8,4 @@ The Library project contains:
 
 - Data model
 - CRUD screens
-- [Sample reports](https://docs.jmix.io/jmix/reports/sample-reports.html) 
+- [Sample reports](https://docs.jmix.io/jmix/reports/sample-reports.html) are imported into the database on application start using the [ReportImporting](src/main/java/com/company/library/app/ReportImporting.java) bean. 
