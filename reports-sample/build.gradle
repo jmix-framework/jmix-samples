@@ -1,12 +1,12 @@
 plugins {
-    id 'io.jmix' version '1.5.0'
+    id 'io.jmix' version '1.5.1'
     id 'java'
 }
 
 apply plugin: 'org.springframework.boot'
 
 jmix {
-    bomVersion = '1.5.0'
+    bomVersion = '1.5.1'
     projectId = 'jmxrpr'
 }
 
