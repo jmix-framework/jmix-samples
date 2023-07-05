@@ -1,5 +1,7 @@
 # Jmix Samples
 
+**These samples are for Jmix v.1. Sample projects for Jmix v.2 are located in [jmix-samples-2](https://github.com/jmix-framework/jmix-samples-2) repository.**
+
 This repository contains a collection of example projects that can help you to learn Jmix features and to find solutions to typical problems.   
 
 To work with an example, clone the repository and open the respective folder in IntelliJ IDEA with installed Jmix plugin.
